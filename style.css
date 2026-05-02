@@ -27,8 +27,8 @@ body {
 
 /* Navbar */
 .navbar {
-    background: #fff;
-    border-bottom: 1px solid #e5e7eb;
+    background: #f1f1f1;
+    border-bottom: 1px solid #e4e8ee;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -72,20 +72,35 @@ main {
 
 /* Hero Section */
 .hero {
+    background: url('img/bg.jpg') center/cover no-repeat;
+    padding: 120px 20px;
     text-align: center;
-    margin-bottom: 64px;
+    color: rgb(240, 229, 229);
+    position: relative;
+    border-radius: 15px; /* biar sesuai yang kamu lingkarin */
+    overflow: hidden;
 }
 
-.hero h1 {
-    font-size: 48px;
-    font-weight: 700;
-    color: #111;
-    margin-bottom: 16px;
+/* overlay biar teks kebaca */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(34, 29, 29, 0.5);
+}
+
+.hero h1,
+.hero p {
+    position: relative;
+    z-index: 1;
 }
 
 .hero-subtitle {
     font-size: 20px;
-    color: #6b7280;
+    color: #f1f1f1;
     max-width: 800px;
     margin: 0 auto;
 }
@@ -143,19 +158,32 @@ main {
 
 /* Page Header */
 .page-header {
+    background: url('img/bg.jpg') center/cover no-repeat;
+    color: white;
+    padding: 100px 20px;
     text-align: center;
-    margin-bottom: 48px;
+    position: relative;
 }
 
-.page-header h1 {
-    font-size: 40px;
-    font-weight: 700;
-    color: #111;
-    margin-bottom: 16px;
+/* biar text tetap kebaca */
+.page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5); /* gelap transparan */
+}
+
+.page-header h1,
+.page-header p {
+    position: relative;
+    z-index: 1;
 }
 
 .page-header p {
-    color: #6b7280;
+    color: #e1e7f3;
     font-size: 18px;
 }
 
