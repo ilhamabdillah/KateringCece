@@ -4,118 +4,292 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Katering Lezat - Kontak</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar">
+
         <div class="container">
+
             <div class="nav-content">
-                <a href="index.html" class="logo">Katering Lezat</a>
+
+                <a href="index.html" class="logo">
+                    Katering Lezat
+                </a>
+
                 <div class="nav-links">
-                    <a href="index.html" class="nav-link">Beranda</a>
-                    <a href="paket.html" class="nav-link">Paket</a>
-                    <a href="galeri.html" class="nav-link">Galeri</a>
-                    <a href="kontak.html" class="nav-link active">Kontak</a>
+
+                    <a href="index.html" class="nav-link">
+                        Beranda
+                    </a>
+
+                    <a href="paket.html" class="nav-link">
+                        Paket
+                    </a>
+
+                    <a href="galeri.html" class="nav-link">
+                        Galeri
+                    </a>
+
+                    <a href="kontak.html" class="nav-link active">
+                        Kontak
+                    </a>
+
                 </div>
+
             </div>
+
         </div>
+
     </nav>
 
+    <!-- MAIN -->
     <main>
+
         <div class="container-small">
+
+            <!-- HEADER -->
             <div class="page-header">
+
                 <h1>Hubungi Kami</h1>
-                <p>Kami siap melayani kebutuhan katering acara Anda</p>
+
+                <p>
+                    Kami siap melayani kebutuhan katering acara Anda
+                </p>
+
             </div>
 
+            <!-- CONTACT GRID -->
             <div class="contact-grid">
+
+                <!-- INFO KONTAK -->
                 <div class="contact-info">
+
                     <h3>Informasi Kontak</h3>
 
+                    <!-- WHATSAPP -->
                     <div class="contact-item">
+
                         <div class="contact-icon">📱</div>
-                        <div>
-                            <p class="contact-label">WhatsApp</p>
-                            <p class="contact-value">0838-9814-1700</p>
-                        </div>
-                    </div>
 
-                    
-                    <div class="contact-item">
-                        <div class="contact-icon">✉️</div>
                         <div>
-                            <p class="contact-label">Email</p>
-                            <p class="contact-value">olahandapurcece@gmail.com</p>
-                        </div>
-                    </div>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <div>
-                            <p class="contact-label">Alamat</p>
+                            <p class="contact-label">
+                                WhatsApp
+                            </p>
+
                             <p class="contact-value">
-                               jl.kh ahmad dahlan, lr.belimbing, No.53<br>
+                                0838-9814-1700
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon">✉️</div>
+
+                        <div>
+
+                            <p class="contact-label">
+                                Email
+                            </p>
+
+                            <p class="contact-value">
+                                olahandapurcece@gmail.com
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- ALAMAT + MAP -->
+                    <div class="contact-item">
+
+                        <div class="contact-icon">📍</div>
+
+                        <div>
+
+                            <p class="contact-label">
+                                Alamat
+                            </p>
+
+                            <p class="contact-value">
+                                Jl. KH Ahmad Dahlan,
+                                Lr. Belimbing No.53
+                                <br>
                                 Palembang
                             </p>
+
+                            <!-- MAP -->
+                            <div class="mini-map">
+
+                                <iframe
+                                    src="https://www.google.com/maps?q=jl.kh%20ahmad%20dahlan%20palembang&output=embed"
+                                    width="100%"
+                                    height="200"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy">
+                                </iframe>
+
+                            </div>
+
                         </div>
+
                     </div>
 
+                    <!-- JAM -->
                     <div class="contact-item">
+
                         <div class="contact-icon">🕐</div>
+
                         <div>
-                            <p class="contact-label">Jam Operasional</p>
-                            <p class="contact-value">
-                                Senin - Sabtu: 08.00 - 20.00<br>
-                                
+
+                            <p class="contact-label">
+                                Jam Operasional
                             </p>
+
+                            <p class="contact-value">
+                                Senin - Sabtu:
+                                08.00 - 20.00
+                            </p>
+
                         </div>
+
                     </div>
+
                 </div>
 
+                <!-- FORM -->
                 <div class="contact-form-wrapper">
+
                     <h3>Kirim Pesan</h3>
 
                     <form id="contactForm" class="contact-form">
+
+                        <!-- NAMA -->
                         <div class="form-group">
-                            <label for="nama">Nama Lengkap</label>
-                            <input type="text" id="nama" name="nama" placeholder="Nama Anda" required>
+
+                            <label for="nama">
+                                Nama Lengkap
+                            </label>
+
+                            <input
+                                type="text"
+                                id="nama"
+                                name="nama"
+                                placeholder="Nama Anda"
+                                required
+                            >
+
                         </div>
 
+                        <!-- TELEPON -->
                         <div class="form-group">
-                            <label for="telepon">Nomor Telepon</label>
-                            <input type="tel" id="telepon" name="telepon" placeholder="08xx-xxxx-xxxx" required>
+
+                            <label for="telepon">
+                                Nomor Telepon
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="telepon"
+                                name="telepon"
+                                placeholder="08xx-xxxx-xxxx"
+                                required
+                            >
+
                         </div>
 
+                        <!-- TANGGAL -->
                         <div class="form-group">
-                            <label for="tanggal">Tanggal Acara</label>
-                            <input type="date" id="tanggal" name="tanggal" required>
+
+                            <label for="tanggal">
+                                Tanggal Acara
+                            </label>
+
+                            <input
+                                type="date"
+                                id="tanggal"
+                                name="tanggal"
+                                required
+                            >
+
                         </div>
 
+                        <!-- PESAN -->
                         <div class="form-group">
-                            <label for="pesan">Pesan</label>
-                            <textarea id="pesan" name="pesan" rows="4" placeholder="Jelaskan kebutuhan katering Anda..." required></textarea>
+
+                            <label for="pesan">
+                                Pesan
+                            </label>
+
+                            <textarea
+                                id="pesan"
+                                name="pesan"
+                                rows="4"
+                                placeholder="Jelaskan kebutuhan katering Anda..."
+                                required>
+                            </textarea>
+
                         </div>
 
-                        <button type="submit" class="btn-submit">Kirim Pesan</button>
+                        <!-- BUTTON -->
+                        <button type="submit" class="btn-submit">
+                            Kirim Pesan
+                        </button>
+
                     </form>
+
                 </div>
+
             </div>
 
+            <!-- INFO BOX -->
             <div class="info-box">
+
                 <p>
-                    <strong>Konsultasi Gratis!</strong> Hubungi kami untuk mendiskusikan kebutuhan katering acara Anda.<br>
+
+                    <strong>
+                        Konsultasi Gratis!
+                    </strong>
+
+                    Hubungi kami untuk mendiskusikan kebutuhan katering acara Anda.
+
+                    <br>
+
                     Tim kami siap membantu merencanakan menu terbaik untuk acara Anda.
+
                 </p>
+
             </div>
+
         </div>
+
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer">
+
         <div class="container">
-            <p>&copy; 2026 Katering Lezat. Semua hak dilindungi.</p>
+
+            <p>
+                &copy; 2026 Katering Lezat.
+                Semua hak dilindungi.
+            </p>
+
         </div>
+
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 </html>
