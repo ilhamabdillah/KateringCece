@@ -1,4 +1,3 @@
-// Form submission handler
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contactForm');
 
@@ -6,30 +5,23 @@ document.addEventListener('DOMContentLoaded', function() {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
 
-            // Get form values
+            // Ambil data form
             const nama = document.getElementById('nama').value;
             const telepon = document.getElementById('telepon').value;
             const tanggal = document.getElementById('tanggal').value;
             const pesan = document.getElementById('pesan').value;
 
-            // Display alert (in real application, you would send this to a server)
-            alert(`Terima kasih, ${nama}!\n\nPesan Anda telah diterima. Kami akan menghubungi Anda segera di nomor ${telepon}.\n\nDetail:\nTanggal Acara: ${tanggal}\nPesan: ${pesan}`);
+            // Nomor tujuan WhatsApp
+            const nomorWA = '6283898141700';
+
+            // Format pesan
+            const text = `Halo, saya ${nama}%0A%0ANomor: ${telepon}%0ATanggal Acara: ${tanggal}%0A%0APesan:%0A${pesan}`;
+
+            // Buka WhatsApp
+            window.open(`https://wa.me/${nomorWA}?text=${text}`, '_blank');
 
             // Reset form
             contactForm.reset();
         });
     }
-});
-
-// Smooth scroll for navigation (optional enhancement)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth'
-            });
-        }
-    });
 });
